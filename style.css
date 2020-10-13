@@ -1,0 +1,30 @@
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family:sans-serif;
+	background: url("wp2599603.jpg") no-repeat;
+}
+
+.container{
+	width: 300px;
+	/*box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);*/
+	background: #fff;
+	padding: 10px 50px;
+	margin: 8% auto;
+	text-align: center;
+}
+
+.container h1{
+	color: lightblue;
+	margin-bottom: 30px;
+}
+
+.form-control{
+	border-radius: 20px;
+	padding: 10px;
+	margin:10px 0;
+	width: 80%;
+	border: 1px solid #999;
+	outline: none;
+}
