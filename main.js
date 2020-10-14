@@ -1,13 +1,13 @@
 
-function check() {
-	var firstName=document.getElementById("fname");
-	var lastName=document.getElementById("lname");
-	var pass=document.getElementById("pass");
-	var cpass=document.getElementById("cpass");
-	var email=document.getElementById("email");
+$('.btn-default').click(function () {
+	var firstName=$("fname").val()
+	var lastName=$("lname").val();
+	var pass=$("pass").val();
+	var cpass=$("cpass").val();
+	var email=$("email").val();
 
-	
-	if (firstName.value==="" || lastName.value==="" || pass.value==="" || cpass.value==="" email.value==="") {
-		alert("PLEASE SELECT GENDER")
+	if (firstName ===undefined || lastName ===undefined || pass ===undefined  || cpass ===undefined || email ===undefined) {
+		alert("PLEASE FILL ALL REQUIRED FIELDS")
 	}
-}
+})
+
