@@ -1,9 +1,18 @@
-var contact = [];
+function makeData(firstName, lastName, pass, cpass, email){
+return {
+	firstname : firstName,
+    lastname : lastName,
+    pass : pass,
+    cpass : cpass,
+    email : email
+}
+}
 
+var contact = [];
 	
 // alert message in the registration page
 $('#button').click(function() {
-	var data = {};
+	
 	var firstName=$("#fname").val();
 	var lastName=$("#lname").val();
 	var pass=$("#pass").val();
@@ -13,16 +22,12 @@ $('#button').click(function() {
 	if (firstName ==="" && lastName ==="" && pass ===""  && cpass ==="" && email ==="") {
 		alert("PLEASE FILL ALL REQUIRED FIELDS")
 	} else if (firstName !=="" && lastName !=="" && pass === cpass && email !=="" ) {
-		// alert("YOU HAVE SUCCESSFULLY SIGNED IN");
-		data.Firstname = firstName;
-        data.Lastname = lastName;
-        data.Pass = pass;
-        data.Email = email;
-
-        contact.push(data);
-		}
+		alert("YOU HAVE SUCCESSFULLY SIGNED IN");
+		var data = makeData(firstName, lastName, pass, cpass, email)
+		contact.push(data)
+		console.log(contact);
+	}
 		})
-		
 
 // alert message in the sign-in page
 $('#button2').click(function() {
@@ -34,5 +39,8 @@ $('#button2').click(function() {
 		alert("YOU HAVE SUCCESSFULLY SIGNED IN")
 		}	
 	})
+
+
+
 
 
