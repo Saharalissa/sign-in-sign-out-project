@@ -7,10 +7,11 @@ return {
     email : email
 }
 }
-
+//declaring a variable for database
 var contact = [];
 	
 // alert message in the registration page
+// adding new registered contact to contacts array
 $('#button').click(function() {
 	
 	var firstName=$("#fname").val();
